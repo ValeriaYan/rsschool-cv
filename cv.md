@@ -20,6 +20,8 @@ At RS school I want to get more practice, learn new technologies and meet new pe
 * JavaScript
 * GIT
 * VS code
+
+
 *************************************************************
 ## Code example
 ```
@@ -41,6 +43,8 @@ function wave(str){
     + Basic HTML and HTML5
     + Basic CSS
     + Basic JavaScript (in process)
+
+
 ******************************************
 ## Languages
 * Russian (Native)
