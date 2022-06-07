@@ -20,3 +20,28 @@ At RS school I want to get more practice, learn new technologies and meet new pe
 * JavaScript
 * GIT
 * VS code
+*************************************************************
+## Code example
+```
+function wave(str){
+  let waveArr = str.toUpperCase().split('');
+  for(let i = 0; i < waveArr.length; i++){
+    if(waveArr[i] === ' ') continue;
+    waveArr[i] = str.substring(0, i) + waveArr[i] + str.substring(i + 1);
+  }
+  
+  return waveArr.filter((item) => item !== ' ');
+}
+```
+*******************************************
+## Education
+* __Omsk State University named after F.М Dostoevsky__
+    + Faculty of Computer Technology
+* __freeCodeCamp__
+    + Basic HTML and HTML5
+    + Basic CSS
+    + Basic JavaScript (in process)
+******************************************
+## Languages
+* Russian (Native)
+* English A2
