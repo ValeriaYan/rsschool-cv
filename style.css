@@ -82,10 +82,10 @@ h1, h2{
     height: 100%;
     padding: 0px 100px;
 }
-.content-info-block {
+.info-block {
     color: #eee;
 }
-.content-info-block__title {
+.info-block__title {
     font-size: 4em;
     margin: 0 ;
     text-align: left;
@@ -127,6 +127,10 @@ h1, h2{
     flex: 1 0 70%;
     padding: 30px 50px;
 }
+/* ----------------------------------------------------ABOUT ME--------------------------------------------- */
+.about-me{
+    padding-bottom: 30px;
+}
 /* --------------------------------------------------- EDUCATION----------------------------------------*/
 .education{
     padding-bottom: 30px;
@@ -139,23 +143,25 @@ h1, h2{
     padding: 0;
     font-weight: bold;
 }
-.list-education__item {
+.education__item {
     padding-bottom: 30px;
 }
-.list-education__item:last-child {
+.education__item:last-child {
     padding-bottom: 0;
 }
-.list-education__sublist {
+.education__sublist {
     font-weight: normal;
     padding-top: 10px;
 }
 
 /* -------------------------------------------SKILLS------------------------------------------------------ */
+.skills{
+    padding-bottom: 30px;
+}
 .skills__title {
     text-align: center;
 }
-.title {
-}
+
 .skills__list {
     padding-left: 40px;
     margin-right: 50px;
@@ -187,16 +193,62 @@ h1, h2{
 }
 
 /* -----------------------------------------------------CODE----------------------------------------------- */
-.code {
-    padding-top: 40px
+.code{
+    padding-bottom: 30px;
 }
-.code__title {
-}
-.title {
-}
+
 .code__text{
     letter-spacing: 1.5px;
     background-color: #eee;
 }
 
-/*  */
+/* --------------------------------------------LANGUAGE----------------------------------------------- */
+.language__title{
+    text-align: center;
+}
+.language__item{
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------PROJECTS------------------------------------------------- */
+.projects{
+    padding-bottom: 30px;
+}
+.projects__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__link{
+    display: inline-block;
+    flex: 0 1 30%;
+    text-decoration: none;
+    color:#171B26;
+    font-weight: bold;
+}
+
+.projects__link img{
+    width: 100%;
+    border: 1px solid #171B26;
+}
+/* --------------------------------------------------FOOTER------------------------------------ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.item-text{
+    color: #eee;
+}
+.link-github img {
+    width: 15%;
+}
+
+.link-rs img{
+    width: 20%;
+}
+
+.link-rs{
+    margin-top: -15px;
+    text-align: right;
+}
