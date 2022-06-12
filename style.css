@@ -1,0 +1,304 @@
+/*----------------------------------------------------- GENERAL -------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #171b26a9;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1470px;
+    min-width: 890px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    background-color: #171B26;
+    min-width: 890px;
+}
+
+h1, h2 {
+    color: #171B26;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.text {
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+/*----------------------------------------------------- HEADER-------------------------------------------------------*/
+
+.nav {
+    margin: 0;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    flex: 0 0 14%;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    background-color: #7a818786;
+}
+
+/* ------------------------------------------------INFO-BLOCK-------------------------------------------------------- */
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.info-block__photo {
+    flex: 1 1 30%;
+    
+}
+
+.info-block__photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info-block__content {
+    flex: 1 1 70%;
+    height: 100%;
+    padding: 0px 100px;
+}
+
+.info-block {
+    color: #eee;
+}
+
+.info-block__title {
+    font-size: 4em;
+    margin: 0 ;
+    text-align: left;
+    margin-bottom: 70px;
+    color: #eee;
+}
+
+.contacts__title {
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.contacts__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+    flex: 1 0 50%;
+    padding: 15px 0;
+}
+
+.contact__subtitle {
+    color:rgb(136, 136, 136);
+}
+
+.contact__title {
+    padding-bottom: 5px;
+}
+
+/* ------------------------------------------------------MAIN--------------------------------------------------- */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__row {
+    padding: 0 50px 50px 0;
+}
+
+.row-left {
+    flex: 1 1 30%;
+    background-color: #eee;
+    padding: 30px 50px;
+}
+
+.row-right {
+    flex: 1 1 70%;
+    padding: 30px 50px;
+}
+
+/* ----------------------------------------------------ABOUT ME--------------------------------------------- */
+.about-me {
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+/* --------------------------------------------------- EDUCATION----------------------------------------*/
+.education {
+    padding-bottom: 30px;
+}
+
+.education__title {
+    text-align: center;
+}
+
+.education__list {
+    padding: 0;
+    font-weight: bold;
+}
+
+.education__item {
+    padding-bottom: 30px;
+}
+
+.education__item:last-child {
+    padding-bottom: 0;
+}
+
+.education__sublist {
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+/* -------------------------------------------SKILLS------------------------------------------------------ */
+.skills {
+    padding-bottom: 30px;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+.skills__list {
+    padding-left: 40px;
+    margin-right: 50px;
+}
+
+.skills-list__item {
+    margin-bottom: 10px;
+}
+
+.skills__row {
+    display: flex;
+    
+}
+
+.skills-progress__item {
+    display: flex;
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.skills-progress__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.circle-active {
+    background-color: #171B26;
+}
+
+/* -----------------------------------------------------CODE----------------------------------------------- */
+.code {
+    padding-bottom: 30px;
+}
+
+.code__text {
+    letter-spacing: 1.5px;
+    background-color: #eee;
+}
+
+/* --------------------------------------------LANGUAGE----------------------------------------------- */
+.language__title {
+    text-align: center;
+}
+
+.language__item {
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------PROJECTS------------------------------------------------- */
+.projects {
+    padding-bottom: 30px;
+}
+
+.projects__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects__link {
+    display: inline-block;
+    flex: 0 1 30%;
+    text-decoration: none;
+    color:#171B26;
+    font-weight: bold;
+}
+
+.projects__link img {
+    width: 100%;
+    border: 1px solid #171B26;
+}
+
+/* --------------------------------------------------FOOTER------------------------------------ */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer__item{
+    flex: 0 0 33%
+}
+
+.item-text {
+    color: #eee;
+}
+
+.link-github img {
+    width: 15%;
+}
+
+.link-rs img {
+    width: 20%;
+}
+
+.link-rs {
+    margin-top: -15px;
+    text-align: right;
+}
