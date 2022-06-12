@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/v.ico">
+    <link rel="icon" href="./img/icon.png">
     <title>CV</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class=" container">
+        <div class="container">
             <header class="header">
                 <nav class="header__nav nav">
                     <ul class="nav__list">
@@ -30,19 +30,140 @@
                 </div>
                 <div class="info-block__content content-info-block">
                     <h1 class="content-info-block__title">Valeria <br> Yanycheva</h1>
-                    <div id="about-me" class="content-info-block__about-me about-me">
-                        <h2 class="about-me__title title">About Me</h2>
-                        <div class="about-me__text text"><p>Three years ago, I entered the university at the Faculty of Computer Technology. For a long time I did not know in which particular direction I want to develop. Half a year ago, I became interested in web development. During this time, I learned the basics of layout and JavaScript.</p> 
-                        <p>At the moment, my goal is to pass all three stages at RS school and become a Junior Frontend Developer. At RS school I want to get more practice, learn new technologies and meet new people.</p></div>
+                    <div id="contacts" class="content-info-block__contacts contacts">
+                        <h2 class="contacts__title title">Contacts</h2>
+                        <div class="contacts__row">
+                            <div class="contacts__tel contact">
+                                <div class="contact__title">Phone:</div>
+                                <div class="contact__subtitle">+7923-690-27-59</div>
+                            </div>
+                            <div class="contacts__email contact">
+                                <div class="contact__title">E-mail:</div>
+                                <div class="contact__subtitle">valeria.yanycheva@gmail.com</div>
+                            </div>
+                            <div class="contacts__discord contact">
+                                <div class="contact__title">Discord: </div>
+                                <div class="contact__subtitle">@feril(ValeriaYan)</div>
+                            </div>
+                            <div class="contacts__telegram contact">
+                                <div class="contact__title">Telegram: </div>
+                                <div class="contact__subtitle">@valeria_yan</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+        </div>
     </div>
         <div class="container">
-            <main></main>
+            <main class="main">
+                <div class="main__row row-left">
+                    <section id="education" class="education">
+                        <h2 class="education__title title">Education</h2>
+                        <ul class="education__list list-education">
+                            <li class="list-education__item">
+                                Omsk State University named after F.М Dostoevsky
+                                <ul class="list-education__sublist">
+                                    <li>
+                                        Faculty of Computer Technology
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="list-education__item">
+                                freeCodeCamp
+                                <ul class="list-education__sublist">
+                                    <li>Basic HTML and HTML5</li>
+                                    <li>Basic CSS</li>
+                                    <li>Basic JavaScript (in process)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="sills" class="skills">
+                        <h2 class="skills__title title">Skills</h2>
+                        <div class="skills__row">
+                            <ul class="skills__list skills-list">
+                                <li class="skills-list__item">C++</li>
+                                <li class="skills-list__item">Java</li>
+                                <li class="skills-list__item">HTML5</li>
+                                <li class="skills-list__item">CSS3</li>
+                                <li class="skills-list__item">JavaScript</li>
+                                <li class="skills-list__item">GIT</li>
+                            </ul>
+                            <ul class="skills__progress skills-progress">
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                </li>
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                </li>
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                </li>
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle"></div>
+                                </li>
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                </li>
+                                <li class="skills-progress__item">
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle circle-active"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                    <div class="skills-progress__circle"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="main__row row-right">
+                    <section id="about-me" class="about-me">
+                        <h2 class="about-me__title title">About Me</h2>
+                        <div class="about-me__text text"><p>Three years ago, I entered the university at the Faculty of Computer Technology. For a long time I did not know in which particular direction I want to develop. Half a year ago, I became interested in web development. During this time, I learned the basics of layout and JavaScript.</p> 
+                        <p>At the moment, my goal is to pass all three stages at RS school and become a Junior Frontend Developer. At RS school I want to get more practice, learn new technologies and meet new people.</p></div>
+                    </section>
+                    <section id="code" class="code">
+                        <h2 class="code__title title">Code example</h2>
+                        <pre class="code__text">
+                            <code>
+            function wave(str){
+                let waveArr = str.toUpperCase().split('');
+                    for(let i = 0; i < waveArr.length; i++){
+                        if(waveArr[i] === ' ') continue;
+                        waveArr[i] = str.substring(0, i) + waveArr[i] + str.substring(i + 1);
+                    }
+                                    
+                return waveArr.filter((item) => item !== ' ');
+            }
+                            </code>
+                        </pre>
+                    </section>
+                </div>
+            </main>
             <footer></footer>
         </div>
         
-    </div>
+        
 </body>
 </html>

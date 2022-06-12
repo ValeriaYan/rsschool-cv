@@ -1,15 +1,18 @@
-/*----------------------------------------------------- MAIN -------------------------------------------------------*/
+/*----------------------------------------------------- GENERAL -------------------------------------------------------*/
 body{
     margin: 0;
     padding: 0;
     font-size: 18px;
+    color: #171b26a9;
 }
 *{
     box-sizing: border-box;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul{
+    list-style-type: none;
+}
 .container{
     max-width: 1470px;
     display: flex;
@@ -21,13 +24,22 @@ body{
 .wrapper{
     background-color: #171B26;
 }
+h1, h2{
+    color: #171B26;
+}
+
+.title {
+    font-size: 2em;
+}
+.text{
+    line-height: 24px;
+}
 /*----------------------------------------------------- HEADER-------------------------------------------------------*/
 
 .nav {
     margin: 0;
 }
 .nav__list {
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -45,7 +57,6 @@ body{
     width: 100%;
     padding: 20px;
     font-weight: bold;
-    letter-spacing: 3px;
     border-radius: 5px;
 }
 .nav__link:hover{
@@ -64,6 +75,7 @@ body{
 }
 .info-block__photo img{
     width: 100%;
+    border-radius: 50%;
 }
 .info-block__content {
     flex: 0 0 70%;
@@ -71,40 +83,120 @@ body{
     padding: 0px 100px;
 }
 .content-info-block {
+    color: #eee;
 }
 .content-info-block__title {
     font-size: 4em;
     margin: 0 ;
     text-align: left;
-    color: #eee;
-    margin-bottom: 30px;
-}
-.content-info-block__about-me {
-    
-}
-.about-me {
+    margin-bottom: 70px;
     color: #eee;
 }
-.about-me__title {
-    margin-top: 0;
+
+.contacts__title{
+    color: #eee;
+    margin-bottom: 10px;
+}
+.contacts__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact{
+    flex: 1 0 50%;
+    padding: 15px 0;
+}
+.contact__subtitle{
+    color:rgb(136, 136, 136);
+}
+.contact__title{
+    padding-bottom: 5px;
+}
+/* ------------------------------------------------------MAIN--------------------------------------------------- */
+.main{
+    display: flex;
+}
+.main__row{
+    padding: 0 50px 50px 0;
+}
+.row-left{
+    flex: 1 0 30%;
+    background-color: #eee;
+    padding: 30px 50px;
+}
+.row-right{
+    flex: 1 0 70%;
+    padding: 30px 50px;
+}
+/* --------------------------------------------------- EDUCATION----------------------------------------*/
+.education{
+    padding-bottom: 30px;
+}
+
+.education__title {
+    text-align: center;
+}
+.education__list {
+    padding: 0;
+    font-weight: bold;
+}
+.list-education__item {
+    padding-bottom: 30px;
+}
+.list-education__item:last-child {
+    padding-bottom: 0;
+}
+.list-education__sublist {
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+/* -------------------------------------------SKILLS------------------------------------------------------ */
+.skills__title {
+    text-align: center;
 }
 .title {
-    font-size: 2em;
-    position: relative;
-    display: inline-block;
 }
-.title:before{
-    content: '';
-    width: 100%;
-    height: 2px;
+.skills__list {
+    padding-left: 40px;
+    margin-right: 50px;
+}
+
+.skills-list__item {
+    margin-bottom: 10px;
+}
+
+.skills__row{
+    display: flex;
+    
+}
+.skills-progress__item{
+    display: flex;
+    height: 22px;
+    margin-bottom: 10px;
+}
+.skills-progress__circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.circle-active{
+    background-color: #171B26;
+}
+
+/* -----------------------------------------------------CODE----------------------------------------------- */
+.code {
+    padding-top: 40px
+}
+.code__title {
+}
+.title {
+}
+.code__text{
+    letter-spacing: 1.5px;
     background-color: #eee;
-    bottom: -10px;
-    left: 0;
-    position: absolute;
 }
-.about-me__text {
-}
-.text{
-    line-height: 24px;
-    color: rgb(204, 204, 204);
-}
+
+/*  */
