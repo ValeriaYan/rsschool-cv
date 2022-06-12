@@ -58,6 +58,7 @@ h1, h2{
     padding: 20px;
     font-weight: bold;
     border-radius: 5px;
+    transition: 0.3s;
 }
 .nav__link:hover{
     background-color: #7a818786;
