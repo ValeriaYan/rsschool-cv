@@ -28,8 +28,9 @@
                 <div class="info-block__photo">
                     <img  src="./img/myPhoto.jpg" alt="MyPhoto">
                 </div>
+                <h1 class="info-block__title title-small-size">Valeria <br> Yanycheva</h1>
                 <div class="info-block__content">
-                    <h1 class="info-block__title">Valeria <br> Yanycheva</h1>
+                    <h1 class="info-block__title title-large-size">Valeria <br> Yanycheva</h1>
                     <div id="contacts" class="info-block__contacts contacts">
                         <h2 class="contacts__title title">Contacts</h2>
                         <ul class="contacts__row">
@@ -136,7 +137,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section id="language" class="language">
+                    <section id="languages" class="language">
                         <h2 class="language__title title">Language</h2>
                         <ul class="language__list">
                             <li class="language__item">Russian - Native</li>
@@ -154,15 +155,15 @@
                         <h2 class="code__title title">Code example</h2>
                         <pre class="code__text">
                             <code>
-            function wave(str){
-                let waveArr = str.toUpperCase().split('');
-                    for(let i = 0; i &lt; waveArr.length; i++){
-                        if(waveArr[i] === ' ') continue;
-                        waveArr[i] = str.substring(0, i) + waveArr[i] + str.substring(i + 1);
-                    }
-                                    
-                return waveArr.filter((item) => item !== ' ');
+    function wave(str){
+        let waveArr = str.toUpperCase().split('');
+            for(let i = 0; i &lt; waveArr.length; i++){
+                if(waveArr[i] === ' ') continue;
+                waveArr[i] = str.substring(0, i) + waveArr[i] + str.substring(i + 1);
             }
+                                
+        return waveArr.filter((item) => item !== ' ');
+    }                       
                             </code>
                         </pre>
                     </section>
@@ -180,14 +181,9 @@
     <div class="wrapper">
         <div class="container">
             <footer class="footer">
-                <a class="footer__item link-github" href="https://github.com/ValeriaYan">
-                   <img src="./img/github.png" alt="github logo">
-                </a>
-                <p class="footer__item item-text">© 2022 by Valeria Yanycheva</p>
-                
-                <a class="footer__item link-rs" href="https://rs.school/js/">
-                    <img src="./img/rs_school_js.png" alt="rs school logo">
-                </a>
+                <a class="footer__link link-github" href="https://github.com/ValeriaYan"></a>
+                <p class="footer__item item-text">&#xa9; 2022 by Valeria Yanycheva</p>
+                <a class="footer__link link-rs" href="https://rs.school/js/"></a>
             </footer>
         </div>
     </div>   
