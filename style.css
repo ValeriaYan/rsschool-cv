@@ -11,7 +11,7 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 ul {
@@ -19,7 +19,7 @@ ul {
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1000px;
     min-width: 555px;
     display: flex;
     flex-direction: column;
@@ -48,6 +48,9 @@ h1, h2 {
 }
 
 /*----------------------------------------------------- HEADER-------------------------------------------------------*/
+.header {
+    padding: 15px 0;
+}
 
 .nav {
     margin: 0;
@@ -56,7 +59,7 @@ h1, h2 {
 .nav__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -66,25 +69,39 @@ h1, h2 {
 }
 
 .nav__link {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+
     text-decoration: none;
     color: #eee;
-    display: inline-block;
-    text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    padding: 20px;
-    /* font-weight: bold; */
-    border-radius: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
     transition: 0.3s;
 }
 
-.nav__link:hover {
-    background-color: #7a818786;
+.nav__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background-color: #eee;
+    transition: all ease 0.5s;
+}
+
+.nav__link:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 938px){
     .nav__item {
         flex: 0 0 25%;
+        margin: 10px 0;
     }
 }
 
@@ -118,7 +135,7 @@ h1, h2 {
 }
 
 .info-block__title {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 ;
     text-align: left;
     margin-bottom: 70px;
@@ -142,7 +159,7 @@ h1, h2 {
 }
 
 .contact {
-    flex: 1 0 50%;
+    flex: 1 0 45%;
     padding: 15px 0;
 }
 
@@ -215,6 +232,7 @@ h1, h2 {
 /* ------------------------------------------------------MAIN--------------------------------------------------- */
 .main {
     display: flex;
+    flex-direction: column;
 }
 
 .main__row {
@@ -295,38 +313,66 @@ h1, h2 {
     text-align: center;
 }
 
-.skills__list {
-    padding-left: 40px;
-    margin-right: 50px;
-}
-
-.skills-list__item {
-    margin-bottom: 10px;
-}
-
-.skills__row {
+.skill {
     display: flex;
-    
 }
 
-.skills-progress__item {
+.skill__img {
     display: flex;
-    height: 18px;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 30%;
+    text-align: center;
+    min-height: 100px;
 }
 
-.skills-progress__circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 1px solid black;
-    margin-left: 5px;
+.skill__img img {
+
 }
 
-.circle-active {
-    background-color: #171B26;
+.skill__progress-bar {
+    flex: 1 1 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.skill__progress {
+    height: 25px;
+    width: 80%;
+    border: 1px solid #171B26;
+    border-radius: 5px;
+    position: relative;
+}
+
+.skill__progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(172, 172, 172);
+}
+
+.skill-html .skill__progress::after {
+    width: 80%;
+}
+
+.skill-css .skill__progress::after {
+    width: 70%;
+}
+
+.skill-js .skill__progress::after {
+    width: 50%;
+}
+
+.skill-git .skill__progress::after {
+    width: 50%;
+}
+
+.skill-java .skill__progress::after {
+    width: 40%;
+}
 /* -----------------------------------------------------CODE----------------------------------------------- */
 .code {
     padding-bottom: 30px;
@@ -398,18 +444,26 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
-.projects__link {
+.project {
     display: inline-block;
     flex: 0 1 50%;
     padding-right: 20px;
-    text-decoration: none;
-    color:#171B26;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.projects__link img {
+.project__title {
+    font-weight: bold;
+    text-align: center;
+    color: #171B26;
+}
+
+.project__link img {
     width: 100%;
+    margin-top: 10px;
     border: 1px solid #171B26;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
 @media (max-width: 1150px) {
