@@ -17,10 +17,8 @@
             <header class="header">
                 <nav class="header__nav nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#about-me" class="nav__link">About me</a></li>
                         <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#code" class="nav__link">Code</a></li>
                         <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
                         <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
@@ -56,110 +54,99 @@
                         </ul>
                     </div>
                 </div>
+                <div class="info-block__aboutme aboutme">
+                    A beginner frontend developer with a lot of training projects.
+                </div>
             </section>
         </div>
     </div>
         <div class="container">
             <main class="main">
-                <section id="about-me" class="about-me">
-                    <h2 class="about-me__title title">About Me</h2>
-                    <div class="about-me__text text"><p>Three years ago, I entered the university at the Faculty of Computer Technology. For a long time I did not know in which particular direction I want to develop. Half a year ago, I became interested in web development. During this time, I learned the basics of layout and JavaScript.</p> 
-                    <p>At the moment, my goal is to pass all three stages at RS school and become a Junior Frontend Developer. At RS school I want to get more practice, learn new technologies and meet new people.</p></div>
-                </section>
-                <section id="education" class="education">
-                    <h2 class="education__title title">Education</h2>
-                    <ul class="education__list">
-                        <li class="education__item">
-                            Omsk State University named after F.М Dostoevsky
-                            <ul class="education__sublist">
-                                <li>
-                                    Faculty of Mathematics and Information Technology
+                <div class="block1">
+                    <div class="education-wrapper">
+                        <section id="education" class="education">
+                            <h2 class="education__title title">Education</h2>
+                            <ul class="education__list">
+                                <li class="education__item">
+                                    Omsk State University named after F.М Dostoevsky
+                                    <ul class="education__sublist">
+                                        <li>
+                                            Faculty of Mathematics and Information Technology
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="education__item">
+                                    FreeCodeCamp
+                                    <ul class="education__sublist">
+                                        <li>Basic HTML and HTML5</li>
+                                        <li>Basic CSS</li>
+                                        <li>Basic JavaScript</li>
+                                    </ul>
+                                </li>
+                                <li class="education__item">
+                                    RS school
+                                    <ul class="education__sublist">
+                                        <li>JS/Frontend pre-school 2022</li>
+                                        <li>JS/Frontend 2022</li>
+                                        <li>React 2023</li>
+                                    </ul>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="education__item">
-                            FreeCodeCamp
-                            <ul class="education__sublist">
-                                <li>Basic HTML and HTML5</li>
-                                <li>Basic CSS</li>
-                                <li>Basic JavaScript (in process)</li>
+                        </section>
+                        <section id="languages" class="language">
+                            <h2 class="language__title title">Languages</h2>
+                            <ul class="language__list">
+                                <li class="language__item">Russian - Native</li>
+                                <li class="language__item">English - A2</li>
                             </ul>
-                        </li>
-                        <li class="education__item">
-                            RS school
-                            <ul class="education__sublist">
-                                <li>Front-end pre-school</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <section id="skills" class="skills">
-                    <h2 class="skills__title title">Skills</h2>
-                    <div class="skills__row">
-                        <div class="skill skill-js">
-                            <div class="skill__img">
-                                <img src="./img/js-icon.svg" alt="" width="50" height="50">
-                            </div>
-                            <div class="skill__progress-bar">
-                                <div class="skill__progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill skill-html">
-                            <div class="skill__img">
-                                <img src="./img/html-icon.svg" alt="" width="50" height="50">
-                            </div>
-                            <div class="skill__progress-bar">
-                                <div class="skill__progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill skill-css">
-                            <div class="skill__img">
-                                <img src="./img/css-icon.svg" alt="" width="50" height="50">
-                            </div>
-                            <div class="skill__progress-bar">
-                                <div class="skill__progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill skill-git">
-                            <div class="skill__img">
-                                <img src="./img/git-icon.svg" alt="" width="70" height="70">
-                            </div>
-                            <div class="skill__progress-bar">
-                                <div class="skill__progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill skill-java">
-                            <div class="skill__img">
-                                <img src="./img/java-icon.svg" alt="" width="70" height="70">
-                            </div>
-                            <div class="skill__progress-bar">
-                                <div class="skill__progress"></div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
-                </section>
-                <section id="languages" class="language">
-                    <h2 class="language__title title">Language</h2>
-                    <ul class="language__list">
-                        <li class="language__item">Russian - Native</li>
-                        <li class="language__item">English - A2</li>
-                    </ul>
-                </section>
-                <section id="code" class="code">
-                    <h2 class="code__title title">Code example</h2>
-                    <pre class="code__text">
-                        <code>
-function wave(str){
-    let waveArr = str.toUpperCase().split('');
-        for(let i = 0; i &lt; waveArr.length; i++){
-            if(waveArr[i] === ' ') continue;
-            waveArr[i] = str.substring(0, i) + waveArr[i] + str.substring(i + 1);
-        }
-    return waveArr.filter((item) =&gt; item !== ' ');
-}
-                        </code>
-                    </pre>
-                </section>
+                    <section id="skills" class="skills">
+                        <h2 class="skills__title title">Skills</h2>
+                        <div class="skills__row">
+                            <div class="skill skill-js">
+                                <div class="skill__img">
+                                    <img src="./img/js-icon.svg" alt="" width="30" height="30">
+                                </div>
+                                JavaScript
+                            </div>
+                            <div class="skill skill-html">
+                                <div class="skill__img">
+                                    <img src="./img/html-icon.svg" alt="" width="30" height="30">
+                                </div>
+                                HTML
+                            </div>
+                            <div class="skill skill-css">
+                                <div class="skill__img">
+                                    <img src="./img/css-icon.svg" alt="" width="30" height="30">
+                                </div>
+                                CSS
+                            </div>
+                            <div class="skill skill-git">
+                                <div class="skill__img">
+                                    <img src="./img/git-icon.svg" alt="" width="50" height="50">
+                                </div>
+                                GIT
+                            </div>
+                            <div class="skill skill-java">
+                                <div class="skill__img">
+                                    <img src="./img/java-icon.svg" alt="" width="50" height="50">
+                                </div>
+                                Java
+                            </div>
+                            <div class="skill skill-react">
+                                <div class="skill__img">
+                                    <img src="./img/react-icon.svg" alt="" width="30" height="30">
+                                </div>
+                                React
+                            </div>
+                            <div class="skill skill-typescript">
+                                <div class="skill__img">
+                                    <img src="./img/typescript-icon.svg" alt="" width="30" height="30">
+                                </div>
+                                TypeScript
+                            </div>
+                        </div>
                 <section id="projects" class="projects">
                     <h2 class="projects__title title">Projects</h2>
                     <div class="projects__row">
@@ -179,6 +166,24 @@ function wave(str){
                             <div class="project__title">Momentum</div>
                             <a class="project__link" href="https://valeriayan.github.io/momentum/momentum/">
                                 <img src="./img/momentum.png" alt="project momentum">
+                            </a>
+                        </div>
+                        <div class="project">
+                            <div class="project__title">Online store</div>
+                            <a class="project__link" href="https://aleksryab-online-store.netlify.app">
+                                <img src="./img/online-store.png" alt="project momentum">
+                            </a>
+                        </div>
+                        <div class="project">
+                            <div class="project__title">PetStory</div>
+                            <a class="project__link" href="https://valeriayan.github.io/PetStory/pages/main/index.html">
+                                <img src="./img/petstory.png" alt="project momentum">
+                            </a>
+                        </div>
+                        <div class="project">
+                            <div class="project__title">Eldritch horror</div>
+                            <a class="project__link" href="https://valeriayan.github.io/codejam-eldritch/">
+                                <img src="./img/eldrich-horror.png" alt="project momentum">
                             </a>
                         </div>
                     </div>
